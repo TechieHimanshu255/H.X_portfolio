@@ -1,0 +1,149 @@
+:root {
+  --bg: #050505;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.1);
+  --blue: #1e90ff;
+  --accent: #38bdf8;
+  --text: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0a0a0a, #000);
+  color: var(--text);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--blue), var(--accent));
+  color: #000;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  opacity: .8;
+}
+
+nav a:hover { opacity: 1; }
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg,var(--blue),var(--accent));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  opacity: .8;
+  margin: 10px 0 30px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  color: white;
+  text-decoration: none;
+  margin: 6px;
+}
+
+.primary {
+  background: linear-gradient(90deg,var(--blue),var(--accent));
+  color: black;
+  border: none;
+}
+
+.section {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card span {
+  font-size: 13px;
+  opacity: .7;
+}
+
+.card button {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: white;
+}
+
+.skills span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 12px;
+  background: var(--card);
+  border-radius: 999px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: .5;
+}
+
+#modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: rgba(0,0,0,.75);
+}
+
+.modal-box {
+  background: #000;
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 420px;
+}

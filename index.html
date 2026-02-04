@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Himanshu Chaudhari | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Himanshu Chaudhari – Programmer, Game Developer & AI Builder">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <header class="header">
+    <div class="logo">HC</div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="primary">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm <span>Himanshu</span></h1>
+    <p>Programmer • Game Developer • AI Inventor</p>
+    <div class="hero-actions">
+      <a href="https://github.com/TechieHimanshu255" target="_blank" class="btn">GitHub</a>
+      <a href="#projects" class="btn ghost">View Projects</a>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>🚀 Projects</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Flappy Bird Clone</h3>
+        <p>Pygame-based arcade game with scoring and physics.</p>
+        <span>Python • Pygame</span>
+        <button onclick="openModal('Flappy Bird Clone','A classic Flappy Bird clone built using Pygame.')">Details</button>
+      </div>
+
+      <div class="card">
+        <h3>Flappy Dot</h3>
+        <p>Minimal dot-based arcade game.</p>
+        <span>Python • Game Dev</span>
+        <button onclick="openModal('Flappy Dot','Lightweight arcade game, fast and fun.')">Details</button>
+      </div>
+
+      <div class="card">
+        <h3>H.X AI Assistant</h3>
+        <p>Personal AI with voice and automation features.</p>
+        <span>Python • AI • Voice</span>
+        <button onclick="openModal('H.X AI','Your custom AI assistant project in progress.')">Details</button>
+      </div>
+
+      <div class="card">
+        <h3>Paw Sensor Mouse</h3>
+        <p>Custom hardware mouse using paw sensor 1306.</p>
+        <span>Arduino • Hardware</span>
+        <button onclick="openModal('Paw Sensor Mouse','Hardware prototype mouse using sensor 1306.')">Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section glass">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+      I’m Himanshu, a student programmer who loves building games, experimenting
+      with hardware, and developing an AI assistant called <b>H.X</b>.
+    </p>
+
+    <div class="skills">
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>HTML / CSS</span>
+      <span>Pygame</span>
+      <span>Arduino</span>
+      <span>AI Basics</span>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
+    <p>Let’s build something cool.</p>
+    <a href="mailto:himanshuchaudhari517@gmail.com" class="btn primary">
+      himanshuchaudhari517@gmail.com
+    </a>
+  </section>
+
+  <footer>
+    © 2025 Himanshu Chaudhari • Built with ❤️
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal">
+    <div class="modal-box">
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
